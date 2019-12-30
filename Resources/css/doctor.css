@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #74a035;
+    --secondary-color: #ffa800;
+    --tartiary-color: rgb(116,160,53, 0.9);
+    --quarternary-color: rgb(65, 99, 18);
+    --primary-font: 'Open Sans', sans-serif;
+  }
+
+.rvp-logout{
+    color: white;
+    font-size: 25px;
+}
+
+.rvp-header-bg{
+    background-color: var(--tartiary-color);
+    border-style: none;
+}
+
+.rvp-close{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: var(--secondary-color);
+    transition-duration: 0.5s;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .rvp-close:hover{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    transition-duration: 0.5s;
+  }
+
+  .rvp-logout-btn{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: gray;
+    transition-duration: 0.5s;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .rvp-logout-btn:hover{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    color: gray;
+    transition-duration: 0.5s;
+  }
+
+  .rvp-hero-pg2{
+    height: 100vh !important;
+    background-image: url('../images/H_5.jpg') !important;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  /* .rvp-black{
+      color: black !important;
+  } */

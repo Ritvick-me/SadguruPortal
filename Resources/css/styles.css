@@ -1,0 +1,659 @@
+:root {
+  --primary-color: #74a035;
+  --secondary-color: #ffa800;
+  --tartiary-color: rgb(116,160,53, 0.9);
+  --quarternary-color: rgb(65, 99, 18);
+  --primary-font: 'Open Sans', sans-serif;
+}
+
+body{
+  font-family: var(--primary-font) !important;
+}
+
+/* Navbar design */
+
+.rvp-navbar{
+  background-color: transparent !important;
+  transition-duration: 0.5s;
+}
+
+.rvp-nav-name{
+  color: white !important;
+  position: relative;
+  margin-left: 10px;
+  transition-duration: 0.5s;
+}
+
+.rvp-nav-alt{
+  background-color: var(--primary-color) !important;
+  transition-duration: 0.5s;
+}
+
+.rvp-nav-name::before{
+  content: '';
+  height: 5px;
+  width: 0px;
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  background-color: white;
+  transition: all 0.7s;
+}
+
+.rvp-nav-name:hover::before{
+  content: '';
+  transition: all 0.7s;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  background-color: white;
+}
+
+.rvp-nav-head{
+  color: var(--secondary-color) !important;
+  font-weight: 999;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.rvp-clinic{
+  color: white !important;
+  font-size: 20px;
+}
+
+/* Navbar ends here */
+
+/* Modal Login */
+
+  .rvp-modal-row{
+    height: 400px;
+  }
+
+  .rvp-col{
+    border-left-style: solid;
+    border-width: 2px;
+    border-color: black;
+  }
+
+  .rvp-col-left{
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: black;
+  }
+
+  .rvp-button{
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+    color: white;
+    background-color: var(--primary-color);
+    transition-duration: 0.5s;
+  }
+
+  .rvp-button:hover{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition-duration: 0.5s;
+  }
+
+  
+  .rvp-back{
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px;
+    color: white;
+    background-color: silver;
+    transition-duration: 0.5s;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rvp-back:hover{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: silver;
+    color: silver;
+    transition-duration: 0.5s;
+  }
+
+  .rvp-close{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: var(--secondary-color);
+    transition-duration: 0.5s;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rvp-close:hover{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    transition-duration: 0.5s;
+  }
+
+  .rvp-mail{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+    color: black;
+    padding-left: 5px;
+    height: 40px;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .rvp-mail:focus{
+    box-shadow: 0px 0px 30px -5px black;
+  }
+
+  .rvp-hide{
+    display: none;
+  }
+  
+/* Modal login ends here */
+
+
+/* Hero starts here */
+
+.rvp-hero{
+  height: 100vh !important;
+  background-image: url('../images/H_1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.rvp-disappear{
+  opacity: 0;
+  margin-top: -50px;
+  transition-duration: 0.5s;
+}
+
+.rvp-row{
+  height: 100vh;
+  /* width: 100vw; */
+  position: static;
+  transition-duration: 0.5s;
+}
+
+.rvp-hero-head{
+  color: var(--secondary-color);
+  font-size: 80px;
+  font-weight: 999;
+  font-family: 'Open Sans', sans-serif !important;
+  margin-left: 18%;
+}
+
+.rvp-s1{
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.rvp-s2{
+  font-size: 40px;
+  background-color: white;
+  color: black;
+  padding-top: 43px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.rvp-s1-alt{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.rvp-s2-alt{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 36px;
+  padding-left: 36px;
+  margin-bottom: 20px !important;
+}
+
+.rvp-row .col{
+  background-color: var(--tartiary-color);
+}
+
+.rvp-hero-sub{
+  font-size: 20px;
+  color: white;
+  font-weight: 999;
+  margin-top: 0px;
+  margin-left: 18%;
+}
+
+.rvp-width{
+  max-width: 420px;
+}
+
+/* Hero ends here */
+
+/* Main Body */
+
+.rvp-body{
+  margin-top: -100px;
+  background-color: white;
+  max-width: 80vw;
+}
+
+.rvp-body-row{
+  margin-bottom: 50px;
+}
+
+.rvp-image{
+  height: 500px;
+  background-image: url('../images/H_5.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.rvp-question{
+  font-family: var(--primary-font);
+  font-weight: 999;
+  color: var(--primary-color);
+}
+
+.rvp-question span{
+  font-size: 50px;
+}
+
+.rvp-appear{
+  opacity: 1 !important;
+  transition-duration: 0.5s;
+}
+
+.rvp-appear2{
+  opacity: 1 !important;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+}
+
+/* Main body ends here */
+
+/* Doctor section starts here */
+
+
+.rvp-doctor{
+  margin-top: 50px;
+  margin-bottom: 100px !important;
+}
+
+.rvp-doctor-head{
+  position: relative;
+  color: black;
+  font-weight: 999;
+  font-size: 40px;
+}
+
+.rvp-doctor-head span{
+  color: var(--primary-color);
+  font-size: 70px;
+}
+
+.rvp-doctor-head::before{
+  content: '';
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  background-color: var(--primary-color);
+  transition: all 0.7s;
+}
+
+.drRamesh{
+  font-weight: 999;
+  font-size: 30px;
+}
+
+.rvp-drRamesh{
+    margin-left: 0px;
+}
+
+
+.rvp-drSwati{
+  max-width: 420px;
+  padding-left: 0px;
+}
+
+.rvp-drRamesh img{
+  max-width: 100%;
+}
+
+.triangle-right{
+  width: 0px;
+	height: 0px;
+	border-top: 55px solid transparent;
+	border-left: 80px solid #74a035;
+	border-bottom: 55px solid transparent;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 55px solid transparent;
+	border-right: 80px solid #74a035;
+  border-bottom: 55px solid transparent;
+  margin-left: 80%;
+}
+
+/* Doctor section ends here */
+
+/* Location section starts here */
+
+.rvp-location{
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.rvp-location-head{
+  position: relative;
+  color: black;
+  font-weight: 999;
+  font-size: 40px;
+}
+
+.rvp-location-head span{
+  color: var(--secondary-color);
+  font-size: 70px;
+}
+
+.rvp-location-head::before{
+  content: '';
+  height: 3px;
+  width: 220px;
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  background-color: var(--secondary-color);
+  transition: all 0.7s;
+}
+
+.rvp-gkp{
+  font-weight: 999;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.triangle-right-alt{
+  width: 0px;
+	height: 0px;
+	border-top: 55px solid transparent;
+	border-left: 80px solid var(--secondary-color);
+	border-bottom: 55px solid transparent;
+}
+
+.triangle-left-alt {
+	width: 0;
+	height: 0;
+	border-top: 55px solid transparent;
+	border-right: 80px solid var(--secondary-color);
+  border-bottom: 55px solid transparent;
+  margin-left: 80%;
+}
+
+/* Location section ends here */
+
+/* Contacts section starts here */
+
+ .rvp-foot-bg{
+   background-image: url('../images/H_4.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   padding-bottom: 30px;
+ }
+
+  .rvp-footer{
+    padding-bottom: 0px;
+    padding: 15px;
+    border-style: none;
+    border-width: 3px;
+    border-color: skyblue;
+    border-radius: 10px;
+    background-color: var(--tartiary-color);
+    box-shadow: 0px 0px 30px 5px black;
+  }
+
+  .rvp-contact{
+    max-width: 90vw;
+  }
+
+  .rvp-footer-head{
+    position: relative;
+    color: black;
+    font-weight: 999;
+    font-size: 40px;
+    margin-left: 15px;
+
+  }
+  
+  .rvp-footer-head span{
+    color: white;
+    font-size: 70px;
+  }
+  
+  .rvp-footer-head::before{
+    content: '';
+    height: 3px;
+    width: 260px;
+    position: absolute;
+    top: 85px;
+    left: 5px;
+    background-color: white;
+    transition: all 0.7s;
+  }
+
+  .rvp-form{
+    padding-right: 0px;
+  }
+
+  .rvp-h1{
+    font-size: 25px;
+    font-weight: 999;
+    color: white;
+  }
+
+  .rvp-name{
+    background-color: white;
+    border-style: none;
+    border-width: 1px;
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+    color: black;
+    padding-left: 5px;
+    height: 40px;
+    width: 45%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+
+  .rvp-input{
+    background-color: white;
+    border-style: none;
+    border-width: 1px;
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+    color: black;
+    padding-left: 5px;
+    height: 40px;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  textarea{
+    min-height: 100px;
+    width: 95%;
+  }
+
+  .rvp-submit{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: white;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+  }
+
+  .rvp-submit:hover{
+    background-color: white;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition-duration: 0.5s;
+  }
+
+  .rvp-email{
+    color: white;
+    font-weight: 999;
+    font-size: 20px;
+  }
+
+  .rvp-email a{
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+    transition-duration: 0.5s;
+  }
+
+  .rvp-email a:hover{
+    color: var(--secondary-color);
+    font-weight: 100;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    text-decoration: none;
+  }
+
+  .rvp-end-h4{
+    font-size: 20px;
+  }
+
+  .rvp-end{
+    color: var(--secondary-color);
+  }
+
+  .rvp-sent{
+    display: none;
+  }
+
+/* Contact section ends here */
+
+@media(max-width:1460px){
+  .rvp-hero-head, .rvp-hero-sub{
+    margin-left: 17%;
+  }
+
+  .triangle-left{
+    margin-left: 75%;
+  }
+}
+
+@media(max-width:1200px){
+  .rvp-hero-head, .rvp-hero-sub{
+    margin-left: 13%;
+  }
+  .triangle-left{
+    margin-left: 65%;
+  }
+}
+
+@media(max-width:992px){
+  .rvp-hero-head, .rvp-hero-sub{
+    margin-left: 0%;
+  }
+  .rvp-hero-sub{
+    margin-top: 40px;
+  }
+  .triangle-left{
+    margin-left: 60%;
+  }
+  .rvp-navbar{
+    background-color: var(--primary-color) !important;
+  }
+  .rvp-drSwati{
+    padding-left: 15px;
+  }
+}
+
+@media(max-width:850px){
+  .triangle-left{
+    margin-left: 60%;
+  }
+}
+
+@media(max-width:768px){
+  .rvp-width{
+    max-width: 100%;
+  }
+  .rvp-drSwati{
+    max-width: 100%;
+  }
+  .rvp-col{
+    border-left-style: none;
+  }
+  .rvp-col-left{
+    border-right-style: none;
+  }
+}
+
+@media(max-width:515px){
+  .rvp-hero-head, .rvp-hero-sub{
+    margin-left: 0%;
+  }
+  .rvp-hero-pad{
+    padding: 0px !important;
+  }
+}
+
+@media(max-width:450px){
+  .rvp-s1{
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .rvp-s2{
+    font-size: 30px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .rvp-row .container-fluid{
+    padding-left: 0px;
+  }
+}
+
+@media(max-width: 360px){
+  .rvp-hero-pad{
+    padding: 0px !important;
+  }
+  .rvp-small-pad{
+    padding: 0px !important;
+  }
+}
